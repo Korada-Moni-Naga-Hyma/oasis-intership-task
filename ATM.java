@@ -44,7 +44,7 @@ class ATM
        Scanner sc=new Scanner(System.in);
        StringBuffer sb=new StringBuffer();
        Date date=new Date();
-       System.out.print("choose an opition\n1.Transactions History\n2.Withdraw\n3.Deposit\n4.Transfer\n5.Quit\nEnter your option:");
+       System.out.print("choose an option\n1.Transactions History\n2.Withdraw\n3.Deposit\n4.Transfer\n5.Quit\nEnter your option:");
         int c=sc.nextInt();
         while(c!=5)
         {
@@ -97,9 +97,9 @@ class ATM
                     int y=sc.nextInt();
                     if(bal>=y)
                     {
-                        System.out.println("Amount Transfered ");
+                        System.out.println("Amount Transferred ");
                         bal=bal-y;
-                        s=i+"."+date.toString()+" Transfered-"+y+"\n";
+                        s=i+"."+date.toString()+" Transferred-"+y+"\n";
                         sb.append(s);
                         i=i+1;
                     }
@@ -111,15 +111,15 @@ class ATM
                 //Transfer();
                 break;
             default:
-            System.out.println("Please enter correct opition");
+            System.out.println("Please enter correct option");
         }
-        System.out.print("Enter your opition:");
+        System.out.print("Enter your option:");
         c=sc.nextInt();
         }
         System.out.println();
         if(c==5)
         {
-            System.out.println("Thank you");
+            System.out.println("****Thank you****");
         }
     }
 }
